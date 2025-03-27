@@ -6,7 +6,7 @@ const jobRoutes = require('./routes/jobRoutes');
 
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5002;
 
 // Middleware
 app.use(cors());
