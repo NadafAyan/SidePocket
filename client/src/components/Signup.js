@@ -17,7 +17,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/auth/signup", user);
+      await axios.post("https://sidepocketbackend.onrender.com/auth/signup", user);
       alert("Account created successfully! Now login with your credentials.");
       navigate("/login"); // Redirect after signup
     } catch (error) {
