@@ -4,6 +4,7 @@ const Job = require('../Models/Job');
 
 
 router.post('/post-job', async (req, res) => {
+    res.status(200).json({message:"working..."});
     try {
         const newJob = new Job(req.body);
         await newJob.save();
