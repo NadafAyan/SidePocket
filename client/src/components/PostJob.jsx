@@ -14,7 +14,7 @@ const PostJobForm = () => {
     e.preventDefault();
     const jobData = { jobTitle, jobCategory, jobDescription, budget, location };
     try {
-      const response = await axios.post("http://localhost:5000/api/jobs/post-job", jobData);
+      const response = await axios.post("https://sidepocketbackend.onrender.com/api/jobs/post-job", jobData);
       console.log("Job posted successfully:", response.data);
       alert("Job posted successfully!");
       setJobTitle("");
